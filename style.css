@@ -1,0 +1,143 @@
+/* style.css */
+.stats-plugin-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 24px;
+    z-index: 99999;
+    min-width: 400px;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.8);
+    color: #fff;
+    font-family: 'YS Text', sans-serif;
+}
+
+.stats-plugin-container::-webkit-scrollbar {
+    width: 4px;
+}
+.stats-plugin-container::-webkit-scrollbar-track {
+    background: #2a2a2a;
+    border-radius: 2px;
+}
+.stats-plugin-container::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 2px;
+}
+
+.stats-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 12px;
+}
+
+.stats-header h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.stats-close-btn {
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 8px;
+    transition: color 0.2s;
+}
+.stats-close-btn:hover {
+    color: #fff;
+}
+
+.stats-total {
+    text-align: center;
+    padding: 16px 0;
+    font-size: 14px;
+    color: #aaa;
+    border-bottom: 1px solid #2a2a2a;
+    margin-bottom: 16px;
+}
+.stats-total span {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    display: block;
+    margin-top: 4px;
+}
+
+.stats-section {
+    margin-bottom: 20px;
+}
+.stats-section h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.stats-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px solid #222;
+    font-size: 14px;
+}
+.stats-item .name {
+    color: #ddd;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%;
+}
+.stats-item .count {
+    color: #666;
+    font-weight: 500;
+}
+
+.stats-item .name .artist {
+    color: #888;
+    font-size: 12px;
+}
+
+.stats-empty {
+    text-align: center;
+    color: #666;
+    padding: 32px 0;
+}
+
+.stats-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid #2a2a2a;
+}
+.stats-actions button {
+    background: #2a2a2a;
+    border: none;
+    color: #aaa;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.stats-actions button:hover {
+    background: #3a3a3a;
+    color: #fff;
+}
+.stats-actions .danger:hover {
+    background: #4a1a1a;
+    color: #ff6b6b;
+}

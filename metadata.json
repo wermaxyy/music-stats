@@ -1,0 +1,30 @@
+{
+  "name": "Статистика прослушиваний",
+  "image": "image.jpg",
+  "banner": "banner.jpg",
+  "libraryLogo": "logo.jpg",
+  "author": "wermaxyy",
+  "description": "Собирает и показывает статистику прослушанных треков: топ исполнителей, топ треков, общее количество.",
+  "version": "1.0.0",
+  "css": "style.css",
+  "script": "script.js",
+  "type": "script",
+  "tags": [
+    "Stats",
+    "Analytics",
+    "Music"
+  ],
+  "dependencies": [],
+  "conflictsWith": [],
+  "allowedUrls": [
+    "https://music.yandex.ru/*",
+    "https://music.yandex.by/*",
+    "https://music.yandex.kz/*"
+  ],
+  "supportedVersions": [
+    ">=5.0.0"
+  ],
+  "id": "music-stats",
+  "installSource": "local",
+  "fromPext": true
+}
